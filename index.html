@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Beauty Line Studio — салон красоты</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">BL</span>
+        <span>Beauty Line</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#works">Работы</a>
+        <a href="#masters">Мастера</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="https://t.me/hotelsupport01_bot?start=beauty_booking" class="header-btn" target="_blank">
+        Записаться
+      </a>
+
+      <button class="burger" id="burgerBtn">
+        ☰
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services">Услуги</a>
+      <a href="#works">Работы</a>
+      <a href="#masters">Мастера</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+      <a href="https://t.me/hotelsupport01_bot?start=beauty_booking" target="_blank">
+        Записаться в Telegram
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-badge">Студия красоты и ухода</p>
+
+          <h1>
+            Красота, которая выглядит естественно и дорого
+          </h1>
+
+          <p class="hero-text">
+            Beauty Line Studio — пространство ухода, где каждая деталь работает на ваш образ:
+            аккуратный маникюр, ухоженные брови, укладки, макияж и бережная атмосфера.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Посмотреть услуги</a>
+            <a href="https://t.me/hotelsupport01_bot?start=beauty_booking" class="btn btn-secondary" target="_blank">
+              Записаться в Telegram
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>1200+</strong>
+              <span>клиентов</span>
+            </div>
+
+            <div>
+              <strong>4.9</strong>
+              <span>средняя оценка</span>
+            </div>
+
+            <div>
+              <strong>7</strong>
+              <span>мастеров</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="beauty-card">
+            <p>Популярная запись</p>
+            <h3>Маникюр + покрытие</h3>
+            <span>от 2 200 ₽</span>
+
+            <div class="beauty-card-line"></div>
+
+            <p class="small-text">
+              Выберите услугу на сайте и продолжите запись через Telegram.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Услуги и цены</p>
+          <h2>Выберите процедуру для своего образа</h2>
+          <p>
+            В демо-версии указаны примерные услуги и цены. Для реального салона
+            сюда добавляются настоящие прайсы, акции и расписание мастеров.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card featured-service">
+            <div class="service-image service-manicure"></div>
+            <div class="service-icon">✦</div>
+
+            <h3>Маникюр</h3>
+            <p>Аккуратная обработка, покрытие, укрепление и дизайн.</p>
+
+            <ul>
+              <li>Маникюр без покрытия</li>
+              <li>Маникюр + гель-лак</li>
+              <li>Укрепление ногтей</li>
+            </ul>
+
+            <div class="service-bottom">
+              <strong>от 2 200 ₽</strong>
+              <button class="service-btn" data-service="Маникюр" data-price="2200">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image service-brows"></div>
+            <div class="service-icon">♡</div>
+
+            <h3>Брови</h3>
+            <p>Коррекция формы, окрашивание и долговременная укладка.</p>
+
+            <ul>
+              <li>Коррекция</li>
+              <li>Окрашивание</li>
+              <li>Ламинирование</li>
+            </ul>
+
+            <div class="service-bottom">
+              <strong>от 1 500 ₽</strong>
+              <button class="service-btn" data-service="Брови" data-price="1500">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image service-hair"></div>
+            <div class="service-icon">✧</div>
+
+            <h3>Укладка</h3>
+            <p>Повседневные, вечерние и праздничные укладки.</p>
+
+            <ul>
+              <li>Лёгкая укладка</li>
+              <li>Вечерняя укладка</li>
+              <li>Объём и локоны</li>
+            </ul>
+
+            <div class="service-bottom">
+              <strong>от 2 000 ₽</strong>
+              <button class="service-btn" data-service="Укладка" data-price="2000">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image service-makeup"></div>
+            <div class="service-icon">☾</div>
+
+            <h3>Макияж</h3>
+            <p>Макияж для съёмки, свидания, выпускного или мероприятия.</p>
+
+            <ul>
+              <li>Дневной макияж</li>
+              <li>Вечерний макияж</li>
+              <li>Свадебный образ</li>
+            </ul>
+
+            <div class="service-bottom">
+              <strong>от 3 000 ₽</strong>
+              <button class="service-btn" data-service="Макияж" data-price="3000">
+                Записаться
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits-section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Почему мы</p>
+          <h2>Атмосфера, качество и внимание к деталям</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <span>01</span>
+            <h3>Стерильность</h3>
+            <p>Инструменты проходят обработку, рабочие места поддерживаются в чистоте.</p>
+          </div>
+
+          <div class="benefit-card">
+            <span>02</span>
+            <h3>Опытные мастера</h3>
+            <p>Каждый мастер работает в своей специализации и помогает подобрать образ.</p>
+          </div>
+
+          <div class="benefit-card">
+            <span>03</span>
+            <h3>Уютный интерьер</h3>
+            <p>Спокойная атмосфера, мягкий свет и ощущение приватного пространства.</p>
+          </div>
+
+          <div class="benefit-card">
+            <span>04</span>
+            <h3>Запись онлайн</h3>
+            <p>Клиент может выбрать услугу на сайте и перейти к записи через Telegram.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works-section" id="works">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Галерея</p>
+          <h2>Работы и атмосфера студии</h2>
+          <p>
+            Для реального клиента сюда можно добавить настоящие фотографии работ,
+            интерьера, процесса и результатов до/после.
+          </p>
+        </div>
+
+        <div class="works-grid">
+          <div class="work-item work-1">
+            <span>Маникюр</span>
+          </div>
+
+          <div class="work-item work-2">
+            <span>Брови</span>
+          </div>
+
+          <div class="work-item work-3">
+            <span>Укладка</span>
+          </div>
+
+          <div class="work-item work-4">
+            <span>Интерьер</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section masters-section" id="masters">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Мастера</p>
+          <h2>Команда, которой доверяют образ</h2>
+        </div>
+
+        <div class="masters-grid">
+          <div class="master-card">
+            <div class="master-photo master-1"></div>
+            <h3>Алина</h3>
+            <p>Мастер маникюра</p>
+            <span>Опыт 4 года</span>
+          </div>
+
+          <div class="master-card">
+            <div class="master-photo master-2"></div>
+            <h3>Мария</h3>
+            <p>Бровист</p>
+            <span>Опыт 3 года</span>
+          </div>
+
+          <div class="master-card">
+            <div class="master-photo master-3"></div>
+            <h3>Ева</h3>
+            <p>Визажист-стилист</p>
+            <span>Опыт 5 лет</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Отзывы</p>
+          <h2>Что говорят клиенты</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Очень приятная атмосфера, аккуратный маникюр и бережное отношение.
+              Записалась через Telegram, всё быстро и удобно.”
+            </p>
+            <strong>Кристина</strong>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Делала брови и укладку. Мастер сразу понял, какой результат я хочу.
+              Всё выглядит естественно и дорого.”
+            </p>
+            <strong>Анна</strong>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Понравился сайт: сразу видно цены, услуги и можно быстро перейти к записи.
+              Очень удобно.”
+            </p>
+            <strong>Мария</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Как записаться</p>
+          <h2>Запись занимает меньше минуты</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <span>1</span>
+            <h3>Выберите услугу</h3>
+            <p>Посмотрите описание и цену процедуры.</p>
+          </div>
+
+          <div class="process-step">
+            <span>2</span>
+            <h3>Нажмите “Записаться”</h3>
+            <p>Откроется окно с выбранной услугой.</p>
+          </div>
+
+          <div class="process-step">
+            <span>3</span>
+            <h3>Перейдите в Telegram</h3>
+            <p>Администратор уточнит дату, время и мастера.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts-section" id="contacts">
+      <div class="container">
+        <div class="contacts-box">
+          <div>
+            <p class="section-label">Контакты</p>
+            <h2>Запишитесь на удобное время</h2>
+            <p>
+              Для записи выберите услугу на сайте или напишите администратору напрямую.
+            </p>
+
+            <div class="contacts-list">
+              <p><strong>Адрес:</strong> г. Москва, ул. Нежная, 18</p>
+              <p><strong>Телефон:</strong> +7 900 000-00-00</p>
+              <p><strong>Telegram:</strong> @beautyline_studio</p>
+              <p><strong>Время работы:</strong> ежедневно с 10:00 до 21:00</p>
+            </div>
+
+            <a href="https://t.me/hotelsupport01_bot?start=beauty_booking" class="btn btn-primary" target="_blank">
+              Записаться в Telegram
+            </a>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <h3>Быстрая заявка</h3>
+
+            <input type="text" id="clientName" placeholder="Ваше имя" />
+            <input type="tel" id="clientPhone" placeholder="Телефон" />
+
+            <select id="clientService">
+              <option value="">Выберите услугу</option>
+              <option value="Маникюр">Маникюр</option>
+              <option value="Брови">Брови</option>
+              <option value="Укладка">Укладка</option>
+              <option value="Макияж">Макияж</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary">
+              Оставить заявку
+            </button>
+
+            <p class="form-message" id="formMessage"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+
+      <p class="section-label">Выбранная услуга</p>
+      <h2 id="modalServiceName">Услуга</h2>
+      <p id="modalServicePrice">Цена</p>
+
+      <p class="modal-text">
+        Для записи перейдите в Telegram. Администратор уточнит удобное время,
+        мастера и детали процедуры.
+      </p>
+
+      <a href="https://t.me/hotelsupport01_bot?start=beauty_booking" class="btn btn-primary" id="modalTelegramLink" target="_blank">
+        Продолжить запись
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Beauty Line Studio © 2026</p>
+      <p>Демо-сайт для портфолио веб-разработчика</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
